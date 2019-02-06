@@ -2,33 +2,23 @@
   display: flex;
 }
 
-nav {
+.primary-nav {
   display: flex;
-  align-items: center;
-  padding: 20px;
+  align-items: flex-end;
+  margin: 20px;
 }
 
 .logo-home {
+  display: flex;
   margin-right: auto;
 }
 
 .page-links {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 nav a {
   text-decoration: none;
   margin-right: 100px;
   color: dimgray
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
