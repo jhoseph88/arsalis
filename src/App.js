@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import { slide as Menu } from 'react-burger-menu'
+import { stack as Menu } from 'react-burger-menu'
 import logo from './logo.png';
 import './App.css';
 
@@ -10,7 +10,7 @@ class App extends Component {
       <div id="outer-container" style={{height: '100%'}}>
         <Router className="App">
           <div>
-            <Menu>
+            <Menu right>
               <Link to="/about" className="page-links">About</Link>
               <Link to="/services" className="page-links">Services</Link>
               <Link to="/contact" className="page-links">Contact Us</Link>
