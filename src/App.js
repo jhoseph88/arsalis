@@ -19,6 +19,7 @@ class App extends Component {
               <img src={logo} alt="logo" width="200px" height="56px"/>
             </Link>
             <p className="slogan">
+              { /* FIXME - Why do we need explicit &nbsp;? Why is space disappearing? There's got to be a better way... */ }
               <span id="human">Humans</span>&nbsp; helping &nbsp; <span id="human">humans</span>. &nbsp;<span id="it">IT</span>&nbsp; is just what we do.
             </p>
             </div>
