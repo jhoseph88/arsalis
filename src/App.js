@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import { stack as Menu } from 'react-burger-menu'
 import logo from './logo.png';
 import './App.css';
+import background from './background.png';
 
 class App extends Component {
   render() {
@@ -22,6 +23,11 @@ class App extends Component {
               <span id="human">Humans</span> helping <span id="human">humans</span>. <span id="it">IT</span> is just what we do...
             </p>
             </div>
+        </Router>
+        <Router className="App">
+        <div>
+          <img src={background} alt="Background Image"/>
+        </div>
         </Router>
       </div>
     );
