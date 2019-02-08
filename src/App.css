@@ -55,13 +55,7 @@ a.active {
 }
 
 /* Position and sizing of clickable cross button */
-.bm-cross-button {
-  position: absolute;
-  left: 10px;
-  top: 14px;
-  height: 24px;
-  width: 24px;
-}
+.bm-cross-button { }
 
 /* Color/shape of close button cross */
 .bm-cross {
