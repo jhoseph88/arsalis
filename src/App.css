@@ -12,16 +12,20 @@
   display: flex;
 }
 
-nav a {
+a {
   text-decoration: none;
-  margin-right: 50px;
-  color: dimgray
+  color: dimgray;
 }
 
 .slogan {
   font-size: 36px;
   margin: 20px;
   text-align: center;
+}
+
+i {
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
 #human {
@@ -83,7 +87,7 @@ a.active {
 /* Individual item */
 .bm-item {
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   font-weight: bold;
   color: lightgray;
 }
