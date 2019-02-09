@@ -17,6 +17,10 @@ a {
   color: dimgray;
 }
 
+a:hover, a:focus {
+  color: gray;
+}
+
 .slogan {
   font-size: 36px;
   margin: 20px;
