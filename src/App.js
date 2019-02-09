@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { stack as Menu } from 'react-burger-menu'
+import Box from './components/Box'
 import logo from './logo.png';
 import './App.css';
 
@@ -27,6 +28,26 @@ class App extends Component {
             <p className="slogan">
               <span id="human">Humans</span> helping <span id="human">humans</span>. <span id="it">IT</span> is just what we do...
             </p>
+              <div className="divider">
+                <span className="broken-hr"/>
+                <span className="divider-title">Our Services</span>
+                <span className="broken-hr"/>
+              </div>
+              { /* TODO - links should link to areas of service page which detail individual service */ }
+              <div className="boxes">
+                <Box title="Full Stack"
+                  icon="important_devices"
+                  page="services"
+                  body="We are a one-top shop for all your application development needs."/>
+                <Box title="Cloud Migration"
+                  icon="cloud"
+                  page="services"
+                  body="Elasticity, scalability, affordability ... We've got you covered."/>
+                <Box title="Data Solutions"
+                  icon="dns"
+                  page="services"
+                  body="ETL, pipelines, warehousing, and much more... "/>
+              </div>
             </div>
         </Router>
       </div>
