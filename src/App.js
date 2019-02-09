@@ -36,15 +36,15 @@ class App extends Component {
               { /* TODO - links should link to areas of service page which detail individual service */ }
               <div className="boxes">
                 <Box title="Full Stack"
-                  icon="important_devices"
+                  icon="fas fa-laptop-code"
                   page="services"
                   body="We are a one-top shop for all your application development needs."/>
                 <Box title="Cloud Migration"
-                  icon="cloud"
+                  icon="fas fa-cloud"
                   page="services"
                   body="Elasticity, scalability, affordability ... We've got you covered."/>
                 <Box title="Data Solutions"
-                  icon="dns"
+                  icon="fas fa-database"
                   page="services"
                   body="ETL, pipelines, warehousing, and much more... "/>
               </div>
