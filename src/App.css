@@ -30,7 +30,7 @@ a:hover, a:focus {
 .divider {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin: 25px 0px;
 }
 
 .divider-title {
