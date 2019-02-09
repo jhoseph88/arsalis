@@ -13,13 +13,13 @@ class App extends Component {
           <div>
             <Menu right>
               <Link to="/about" className="page-links">
-                <i class="material-icons">info</i>About
+                <i className="fas fa-info-circle"/>About
               </Link>
               <Link to="/services" className="page-links">
-                <i class="material-icons">work</i>Services
+                <i class="fas fa-briefcase"/>Services
               </Link>
               <Link to="/contact" className="page-links">
-                <i class="material-icons">contact_support</i>Contact Us
+                <i class="fas fa-question-circle"/>Contact Us
               </Link>
             </Menu>
             <Link to="/" className="logo-home">

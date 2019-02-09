@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.page-links > i {
+  margin-right: 20px;
+}
+
 a {
   text-decoration: none;
   color: dimgray;
