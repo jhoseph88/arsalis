@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import { stack as Menu } from 'react-burger-menu'
 import Box from './components/Box'
-import logo from './logo.png';
-import './App.css';
+import logo from './logo.png'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -38,7 +38,7 @@ class App extends Component {
                 <Box title="Full Stack"
                   icon="fas fa-laptop-code"
                   page="services"
-                  body="We are a one-top shop for all your application development needs."/>
+                  body="We are a one-stop shop for all your application development needs."/>
                 <Box title="Cloud Migration"
                   icon="fas fa-cloud"
                   page="services"
