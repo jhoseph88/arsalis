@@ -12,9 +12,15 @@ class App extends Component {
         <Router className="App">
           <div>
             <Menu right>
-              <Link to="/about" className="page-links">About</Link>
-              <Link to="/services" className="page-links">Services</Link>
-              <Link to="/contact" className="page-links">Contact Us</Link>
+              <Link to="/about" className="page-links">
+                <i class="material-icons">info</i>About
+              </Link>
+              <Link to="/services" className="page-links">
+                <i class="material-icons">work</i>Services
+              </Link>
+              <Link to="/contact" className="page-links">
+                <i class="material-icons">contact_support</i>Contact Us
+              </Link>
             </Menu>
             <Link to="/" className="logo-home">
               <img src={logo} alt="logo" width="200px" height="56px"/>
