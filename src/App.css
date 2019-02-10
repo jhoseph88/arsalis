@@ -44,6 +44,11 @@ a.active {
     color: orange;
 }
 
+.background-image {
+  width: -webkit-fill-available;
+  height: 500px;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;

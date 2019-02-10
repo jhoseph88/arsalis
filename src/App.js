@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import { stack as Menu } from 'react-burger-menu'
 import logo from './logo.png';
 import './App.css';
-import background from './background.png';
+import background from './background2.png';
 
 class App extends Component {
   render() {
@@ -32,7 +32,7 @@ class App extends Component {
         </Router>
         <Router className="App">
         <div>
-          <img src={background} alt="Background Image"/>
+          <img className="background-image" src={background} alt="Background Image"/>
         </div>
         </Router>
       </div>
