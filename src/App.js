@@ -9,9 +9,9 @@ import background from './background2.png';
 class App extends Component {
   render() {
     return (
-      <div id="outer-container" style={{height: '100%'}}>
+      <div id="outer-container">
         <Router className="App">
-          <div>
+          <div style={{ backgroundImage: `url(${background})`}}>
             <Menu right>
               <Link to="/about" className="page-links">
                 <i className="fas fa-info-circle"/>About
@@ -29,40 +29,37 @@ class App extends Component {
             <p className="slogan">
               <span id="human">Humans</span> helping <span id="human">humans</span>. <span id="it">IT</span> is just what we do...
             </p>
-            <div>
-              <img className="background-image" src={background} alt="Background" style={{ width: "100%" }}/>
+            <div className="divider">
+              <span className="broken-hr"/>
+              <span className="divider-title">Our Services</span>
+              <span className="broken-hr"/>
             </div>
-              <div className="divider">
-                <span className="broken-hr"/>
-                <span className="divider-title">Our Services</span>
-                <span className="broken-hr"/>
-              </div>
-              { /* TODO - links should link to areas of service page which detail individual service */ }
-              <div className="boxes">
-                <Box title="Full Stack"
-                  icon="fas fa-laptop-code"
-                  page="services"
-                  body="We are a one-stop shop for all your application development needs."/>
-                <Box title="Cloud Migration"
-                  icon="fas fa-cloud"
-                  page="services"
-                  body="Elasticity, scalability, affordability ... We've got you covered."/>
-                <Box title="Data Solutions"
-                  icon="fas fa-database"
-                  page="services"
-                  body="ETL, pipelines, warehousing, and much more... "/>
-              </div>
-              <div className="divider">
-                <span className="broken-hr"/>
-                <span className="divider-title">Contact Us</span>
-                <span className="broken-hr"/>
-              </div>
-              <div className="contact-background">
-                <form>
-                <p className="contact-form"> Place holder! Coming soon....</p>
-                </form>
-              </div>
+            { /* TODO - links should link to areas of service page which detail individual service */ }
+            <div className="boxes">
+              <Box title="Full Stack"
+                icon="fas fa-laptop-code"
+                page="services"
+                body="We are a one-stop shop for all your application development needs."/>
+              <Box title="Cloud Migration"
+                icon="fas fa-cloud"
+                page="services"
+                body="Elasticity, scalability, affordability ... We've got you covered."/>
+              <Box title="Data Solutions"
+                icon="fas fa-database"
+                page="services"
+                body="ETL, pipelines, warehousing, and much more... "/>
             </div>
+            <div className="divider">
+              <span className="broken-hr"/>
+              <span className="divider-title">Contact Us</span>
+              <span className="broken-hr"/>
+            </div>
+            <div className="contact-background">
+              <form>
+              <p className="contact-form"> Place holder! Coming soon....</p>
+              </form>
+            </div>
+          </div>
         </Router>
       </div>
     );
