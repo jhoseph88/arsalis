@@ -52,6 +52,16 @@ class App extends Component {
                   page="services"
                   body="ETL, pipelines, warehousing, and much more... "/>
               </div>
+              <div className="divider">
+                <span className="broken-hr"/>
+                <span className="divider-title">Contact Us</span>
+                <span className="broken-hr"/>
+              </div>
+              <div className="contact-background">
+                <form>
+                <p className="contact-form"> Place holder! Coming soon....</p>
+                </form>
+              </div>
             </div>
         </Router>
       </div>

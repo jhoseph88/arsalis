@@ -71,12 +71,26 @@ a:hover, a:focus {
 }
 
 a.active {
-    color: orange;
+  color: orange;
 }
 
 .background-image {
   width: -webkit-fill-available;
   height: 500px;
+}
+
+.contact-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #564c3a;
+  width: -webkit-fill-available;
+  height: 500px;
+}
+
+.contact-form {
+  font-style: italic;
+  color: white;
 }
 
 /* Position and sizing of burger button */
