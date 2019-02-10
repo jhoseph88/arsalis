@@ -30,7 +30,7 @@ class App extends Component {
               <span id="human">Humans</span> helping <span id="human">humans</span>. <span id="it">IT</span> is just what we do...
             </p>
             <div>
-              <img className="background-image" src={background} alt="Background Image"/>
+              <img className="background-image" src={background} alt="Background" style={{ width: "100%" }}/>
             </div>
               <div className="divider">
                 <span className="broken-hr"/>
