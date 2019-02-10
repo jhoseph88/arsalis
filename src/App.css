@@ -12,9 +12,17 @@
   display: flex;
 }
 
+.page-links > i {
+  margin-right: 20px;
+}
+
 a {
   text-decoration: none;
   color: dimgray;
+}
+
+a:hover, a:focus {
+  color: gray;
 }
 
 .slogan {
@@ -23,9 +31,31 @@ a {
   text-align: center;
 }
 
-i {
-  vertical-align: middle;
-  margin-right: 15px;
+.divider {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px;
+}
+
+.divider-title {
+  width: 30%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.broken-hr {
+  background-color: black;
+  height: 1px;
+  width: 30%;
+  margin-top: 12px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #human {

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import { stack as Menu } from 'react-burger-menu'
-import logo from './logo.png';
-import './App.css';
+import Box from './components/Box'
+import logo from './logo.png'
+import './App.css'
 import background from './background2.png';
 
 class App extends Component {
@@ -13,13 +14,13 @@ class App extends Component {
           <div>
             <Menu right>
               <Link to="/about" className="page-links">
-                <i class="material-icons">info</i>About
+                <i className="fas fa-info-circle"/>About
               </Link>
               <Link to="/services" className="page-links">
-                <i class="material-icons">work</i>Services
+                <i class="fas fa-briefcase"/>Services
               </Link>
               <Link to="/contact" className="page-links">
-                <i class="material-icons">contact_support</i>Contact Us
+                <i class="fas fa-question-circle"/>Contact Us
               </Link>
             </Menu>
             <Link to="/" className="logo-home">
@@ -28,12 +29,30 @@ class App extends Component {
             <p className="slogan">
               <span id="human">Humans</span> helping <span id="human">humans</span>. <span id="it">IT</span> is just what we do...
             </p>
+            <div>
+              <img className="background-image" src={background} alt="Background Image"/>
             </div>
-        </Router>
-        <Router className="App">
-        <div>
-          <img className="background-image" src={background} alt="Background Image"/>
-        </div>
+              <div className="divider">
+                <span className="broken-hr"/>
+                <span className="divider-title">Our Services</span>
+                <span className="broken-hr"/>
+              </div>
+              { /* TODO - links should link to areas of service page which detail individual service */ }
+              <div className="boxes">
+                <Box title="Full Stack"
+                  icon="fas fa-laptop-code"
+                  page="services"
+                  body="We are a one-stop shop for all your application development needs."/>
+                <Box title="Cloud Migration"
+                  icon="fas fa-cloud"
+                  page="services"
+                  body="Elasticity, scalability, affordability ... We've got you covered."/>
+                <Box title="Data Solutions"
+                  icon="fas fa-database"
+                  page="services"
+                  body="ETL, pipelines, warehousing, and much more... "/>
+              </div>
+            </div>
         </Router>
       </div>
     );
