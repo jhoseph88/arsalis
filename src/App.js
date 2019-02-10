@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div id="outer-container">
         <Router className="App">
-          <div style={{ backgroundImage: `url(${background})`}}>
+          <div style={{ background: `linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.5)), url(${background})`}}>
             <Menu right>
               <Link to="/about" className="page-links">
                 <i className="fas fa-info-circle"/>About
