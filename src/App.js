@@ -5,6 +5,7 @@ import Box from './components/Box'
 import logo from './logo.png'
 import './App.css'
 import background from './background2.png';
+import Contact from './components/Contact'
 
 class App extends Component {
   render() {
