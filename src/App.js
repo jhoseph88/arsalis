@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div id="outer-container">
         <Router className="App">
-          <div style={{ background: `linear-gradient(rgba(255,255,255, 0), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
+          <div style={{ background: `linear-gradient(rgba(255,255,255, .5), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
             <Menu right>
               <Link to="/about" className="page-links">
                 <i className="fas fa-info-circle"/>About
