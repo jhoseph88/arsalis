@@ -4,14 +4,14 @@ import { stack as Menu } from 'react-burger-menu'
 import Box from './components/Box'
 import logo from './logo.png'
 import './App.css'
-import background from './background2.png';
+import background from './background_flipped.png';
 
 class App extends Component {
   render() {
     return (
       <div id="outer-container">
         <Router className="App">
-          <div style={{ background: `linear-gradient(rgba(255,255,255, 0), rgba(255,255,255)), url(${background})`}}>
+          <div style={{ background: `linear-gradient(rgba(255,255,255, 0), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
             <Menu right>
               <Link to="/about" className="page-links">
                 <i className="fas fa-info-circle"/>About
