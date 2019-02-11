@@ -5,6 +5,7 @@
 .logo-home {
   display: flex;
   padding: 20px;
+  width: 200px;
   margin-right: auto;
 }
 
