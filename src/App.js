@@ -6,7 +6,18 @@ import logo from './logo.png'
 import './App.css'
 import background from './background_flipped.png';
 
+
+const buttonStyle = {
+  backgroundColor: 'gray',
+  color: 'lightgray',
+  width: '30%',
+  margin: '20px',
+  textAlign: 'center',
+  fontWeight: 'bold'
+}
+
 class App extends Component {
+
   render() {
     return (
       <div id="outer-container">
@@ -49,6 +60,17 @@ class App extends Component {
                 page="services"
                 body="ETL, pipelines, warehousing, and much more... "/>
             </div>
+            <p className="slogan">
+              Ready to find out more?
+            </p>
+            <div className="dual-buttons" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+              <Link to="/about" style={ buttonStyle }>
+                <p>Our Background</p>
+              </Link>
+              <Link to="/about" style={ buttonStyle }>
+                <p>What We Offer</p>
+              </Link>
+            </div>
             <div className="divider">
               <span className="broken-hr"/>
               <span className="divider-title">Contact Us</span>
@@ -56,7 +78,7 @@ class App extends Component {
             </div>
             <div className="contact-background">
               <form>
-              <p className="contact-form"> Place holder! Coming soon....</p>
+                <p className="contact-form"> Place holder! Coming soon....</p>
               </form>
             </div>
           </div>

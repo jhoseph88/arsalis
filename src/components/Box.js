@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 
 export default function Box(props) {
-  const style = {
+  const boxStyle = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -14,10 +14,15 @@ export default function Box(props) {
     width: "225px",
     height: "225px"
   }
+  const iconStyle = {
+    fontSize: '64px',
+    display: 'inline-flex',
+    justifyContent: 'center'
+  }
   return (
-    <Link className="Box" style={ style } to={ props.page }>
+    <Link style={ boxStyle } to={ props.page }>
       <h2>{ props.title }</h2>
-      <i className={ props.icon } style={{ fontSize: "64px", display: "inline-flex", justifyContent: 'center' }}/>
+      <i className={ props.icon } style={ iconStyle }/>
       <h6>{ props.body }</h6>
     </Link>
   )
