@@ -12,16 +12,16 @@ class App extends Component {
     return (
       <div id="outer-container">
         <Router className="App">
-          <div style={{ background: `linear-gradient(rgba(255,255,255, 0), rgba(255,255,255)), url(${background})`}}>
+          <div style={{ background: `linear-gradient(rgba(255,255,255, .80), rgba(255,255,255)), url(${background})`}}>
             <Menu right>
               <Link to="/about" className="page-links">
                 <i className="fas fa-info-circle"/>About
               </Link>
               <Link to="/services" className="page-links">
-                <i class="fas fa-briefcase"/>Services
+                <i className="fas fa-briefcase"/>Services
               </Link>
               <Link to="/contact" className="page-links">
-                <i class="fas fa-question-circle"/>Contact Us
+                <i className="fas fa-question-circle"/>Contact Us
               </Link>
             </Menu>
             <Link to="/" className="logo-home">
@@ -56,9 +56,9 @@ class App extends Component {
               <span className="broken-hr"/>
             </div>
             <div className="contact-background">
-              <form>
-              <p className="contact-form"> Place holder! Coming soon....</p>
-              </form>
+              <div>
+              <Contact/>
+              </div>
             </div>
           </div>
         </Router>

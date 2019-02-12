@@ -83,14 +83,24 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #564c3a;
+  background-color: dimgray;
   width: -webkit-fill-available;
   height: 500px;
 }
 
 .contact-form {
   font-style: italic;
-  color: white;
+  color: lightgray;
+}
+
+.form-control {
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.control-error {
+  border: 1px solid red;
 }
 
 /* Position and sizing of burger button */
