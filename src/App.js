@@ -78,15 +78,9 @@ class App extends Component {
               <span className="broken-hr"/>
             </div>
             <div className="contact-background">
-<<<<<<< HEAD
               <div>
               <Contact/>
               </div>
-=======
-              <form>
-                <p className="contact-form"> Place holder! Coming soon....</p>
-              </form>
->>>>>>> 6c65b7f758862b9c795f523bee19c02e9651e8a7
             </div>
           </div>
         </Router>

@@ -84,17 +84,13 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   background-color: dimgray;
   width: -webkit-fill-available;
   height: 500px;
-=======
->>>>>>> 6c65b7f758862b9c795f523bee19c02e9651e8a7
 }
 
 .contact-form {
   font-style: italic;
-<<<<<<< HEAD
   color: lightgray;
 }
 
@@ -106,9 +102,6 @@ a.active {
 
 .control-error {
   border: 1px solid red;
-=======
-  color: black;
->>>>>>> 6c65b7f758862b9c795f523bee19c02e9651e8a7
 }
 
 /* Position and sizing of burger button */
