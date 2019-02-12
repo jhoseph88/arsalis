@@ -87,10 +87,6 @@ a.active {
   background-color: dimgray;
   width: -webkit-fill-available;
   height: 500px;
-}
-
-.contact-form {
-  font-style: italic;
   color: lightgray;
 }
 

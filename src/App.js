@@ -79,7 +79,10 @@ class App extends Component {
             </div>
             <div className="contact-background">
               <div>
-              <Contact/>
+                <Contact/>
+              </div>
+              <div>
+                <span>Address. 4917 Sadler Glen Ct, Glen Allen VA 23060</span><span>Tel. (804) 937-8481</span><span>Email. admin@arsalis.rog</span>
               </div>
             </div>
           </div>
