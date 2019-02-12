@@ -7,7 +7,18 @@ import './App.css'
 import background from './background_flipped.png';
 import Contact from './components/Contact'
 
+
+const buttonStyle = {
+  backgroundColor: 'gray',
+  color: 'lightgray',
+  width: '30%',
+  margin: '20px',
+  textAlign: 'center',
+  fontWeight: 'bold'
+}
+
 class App extends Component {
+
   render() {
     return (
       <div id="outer-container">
@@ -50,15 +61,32 @@ class App extends Component {
                 page="services"
                 body="ETL, pipelines, warehousing, and much more... "/>
             </div>
+            <p className="slogan">
+              Ready to find out more?
+            </p>
+            <div className="dual-buttons" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+              <Link to="/about" style={ buttonStyle }>
+                <p>Our Background</p>
+              </Link>
+              <Link to="/about" style={ buttonStyle }>
+                <p>What We Offer</p>
+              </Link>
+            </div>
             <div className="divider">
               <span className="broken-hr"/>
               <span className="divider-title">Contact Us</span>
               <span className="broken-hr"/>
             </div>
             <div className="contact-background">
+<<<<<<< HEAD
               <div>
               <Contact/>
               </div>
+=======
+              <form>
+                <p className="contact-form"> Place holder! Coming soon....</p>
+              </form>
+>>>>>>> 6c65b7f758862b9c795f523bee19c02e9651e8a7
             </div>
           </div>
         </Router>
