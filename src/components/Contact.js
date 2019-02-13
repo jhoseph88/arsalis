@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import TextInput from './TextInput';
 import Email from './Email';
-import Message from './Message';
 import Validate from './ValidateInput';
 
 class ContractForm extends Component {
