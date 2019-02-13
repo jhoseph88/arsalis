@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import React, { Component, ReactDOM } from 'react';
+import { Route, Link } from 'react-router-dom'
 import { stack as Menu } from 'react-burger-menu'
 import Box from './components/Box'
 import logo from './logo.png'
@@ -18,11 +18,27 @@ const buttonStyle = {
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.jumpToContactUs = this.jumpToContactUs.bind(this)
+  }
+
+  jumpToContactUs(location) {
+    console.log("LOCATION: " + location);
+    let hash = location.hash.replace('#', '');
+    if (hash) {
+        let node = ReactDOM.findDOMNode(this.refs[hash]);
+        console.log(node);
+        console.log(hash);
+        if (node) {
+            node.scrollIntoView();
+        }
+    }
+  }
 
   render() {
     return (
-      <div id="outer-container">
-        <Router className="App">
+      <div id="outer-container" className="App">
           <div style={{ background: `linear-gradient(rgba(255,255,255, .5), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
             <Menu right>
               <Link to="/about" className="page-links">
@@ -31,9 +47,9 @@ class App extends Component {
               <Link to="/services" className="page-links">
                 <i className="fas fa-briefcase"/>Services
               </Link>
-              <Link to="/contact" className="page-links">
+              <Route path="/#contactus" className="page-links" onClick={() => { console.log(this.props.location); this.jumpToContactUs(this.props.location)}}>
                 <i className="fas fa-question-circle"/>Contact Us
-              </Link>
+              </Route>
             </Menu>
             <Link to="/" className="logo-home">
               <img src={logo} alt="logo" width="200px" height="56px"/>
@@ -77,16 +93,15 @@ class App extends Component {
               <span className="divider-title">Contact Us</span>
               <span className="broken-hr"/>
             </div>
-            <div className="contact-background">
-              <div>
-                <Contact/>
+              <div id="contactus" className="contact-background">
+                <div>
+                  <Contact/>
+                </div>
+                <div>
+                  <span>Address. 4917 Sadler Glen Ct, Glen Allen VA 23060</span><span>Tel. (804) 937-8481</span><span>Email. admin@arsalis.rog</span>
+                </div>
               </div>
-              <div>
-                <span>Address. 4917 Sadler Glen Ct, Glen Allen VA 23060</span><span>Tel. (804) 937-8481</span><span>Email. admin@arsalis.rog</span>
-              </div>
-            </div>
           </div>
-        </Router>
       </div>
     );
   }
