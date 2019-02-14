@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
-import TextInput from './TextInput';
-import Email from './Email';
-import Validate from './ValidateInput';
+import React, {Component} from 'react'
+import TextInput from './TextInput'
+import Email from './Email'
+import Validate from './ValidateInput'
+import sendEmail from '../services/email'
 
 class ContractForm extends Component {
   constructor (props) {
@@ -76,7 +77,12 @@ class ContractForm extends Component {
     for (let formElementId in this.state.formControls) {
       formData[formElementId] = this.state.formControls[formElementId].value;
     }
-    console.log(formData);
+    sendEmail(
+      "admin@arsalis.org",
+      "admin@arsalis.org",
+      `Website query from ${formData["name"]} (${formData["email"]})`,
+      formData["message"]
+    )
   }
 
   render () {
@@ -104,7 +110,7 @@ class ContractForm extends Component {
                      valid={this.state.formControls.message.valid ? 1: 0}
           />
           <button onClick={this.formSubmitHandler}
-                  disabled={! this.state.formIsValid}>
+                  disabled={!this.state.formIsValid}>
                   Submit
           </button>
       </form>
