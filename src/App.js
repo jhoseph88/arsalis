@@ -60,7 +60,7 @@ export default function App(props) {
       <p className="slogan">
         Ready to find out more?
       </p>
-      <div className="dual-buttons" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+      <div className="dual-buttons flex-centered-row">
         <Link to="/about" style={ buttonStyle }>
           <p>Our Background</p>
         </Link>
