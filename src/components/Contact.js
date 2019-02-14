@@ -88,21 +88,25 @@ class ContractForm extends Component {
   render () {
     return (
       <form>
-          <TextInput name="name"
-                     placeholder={this.state.formControls.name.placeholder}
-                     value={this.state.formControls.name.value}
-                     onChange={this.changeHandler}
-                     touched={this.state.formControls.name.touched ? 1: 0}
-                     valid={this.state.formControls.name.valid ? 1: 0}
-          />
-          <Email name="email"
-                     placeholder={this.state.formControls.email.placeholder}
-                     value={this.state.formControls.email.value}
-                     onChange={this.changeHandler}
-                     touched={this.state.formControls.email.touched ? 1: 0}
-                     valid={this.state.formControls.email.valid ? 1: 0}
-          />
+            <TextInput name="name"
+                       id="contact-name"
+                       placeholder={this.state.formControls.name.placeholder}
+                       value={this.state.formControls.name.value}
+                       onChange={this.changeHandler}
+                       touched={this.state.formControls.name.touched ? 1: 0}
+                       valid={this.state.formControls.name.valid ? 1: 0}
+            />
+            <Email name="email"
+                       id="contact-email"
+                       placeholder={this.state.formControls.email.placeholder}
+                       value={this.state.formControls.email.value}
+                       onChange={this.changeHandler}
+                       touched={this.state.formControls.email.touched ? 1: 0}
+                       valid={this.state.formControls.email.valid ? 1: 0}
+            />
           <TextInput name="message"
+                     id="contact-message"
+                     className="input-message-control"
                      placeholder={this.state.formControls.message.placeholder}
                      value={this.state.formControls.message.value}
                      onChange={this.changeHandler}

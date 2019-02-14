@@ -9,9 +9,7 @@ const Email = props => {
     }
 
     return (
-        <div>
             <input type="email" className={formControl} {...props} />
-        </div>
     );
 }
 

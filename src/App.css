@@ -87,24 +87,40 @@ a.active {
   align-items: center;
   background-color: dimgray;
   width: -webkit-fill-available;
-  height: 500px;
+  height: 400px;
   color: lightgray;
 }
 
 .form-control {
-  width: 50%;
+  width: 40%;
   border: 1px solid #ccc;
   padding: 10px;
+  margin: 20px;
+  font-weight: bold;
+  background-color: lightgray;
+  color: black;
+
 }
 
 .control-error {
   border: 1px solid red;
 }
 
-.flex-centered-row{
+.centered-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.input-message-control {
+  width: 88%;
+  padding: 10px;
+  margin: 20px;
+  height: 140px;
+  background-color: lightgray;
+  color: black;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 /* Position and sizing of burger button */

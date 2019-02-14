@@ -9,9 +9,7 @@ export default function TextInput(props) {
   }
 
   return (
-    <div>
       <input type="text" className={formControl} {...props}/>
-    </div>
   )
 
 }
