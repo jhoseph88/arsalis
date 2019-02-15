@@ -106,21 +106,20 @@ a.active {
   border: 1px solid red;
 }
 
-.centered-row {
+.centered-rows {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .input-message-control {
-  width: 88%;
+  width: 89%;
+  height: 140px;
   padding: 10px;
   margin: 20px;
-  height: 140px;
   background-color: lightgray;
   color: black;
-  flex: 1;
-  flex-wrap: wrap;
+  resize: none;
 }
 
 /* Position and sizing of burger button */

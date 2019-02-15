@@ -3,6 +3,7 @@ import TextInput from './TextInput'
 import Email from './Email'
 import Validate from './ValidateInput'
 import sendEmail from '../services/email'
+import TextArea from './TextArea'
 
 class ContractForm extends Component {
   constructor (props) {
@@ -104,19 +105,21 @@ class ContractForm extends Component {
                        touched={this.state.formControls.email.touched ? 1: 0}
                        valid={this.state.formControls.email.valid ? 1: 0}
             />
-          <TextInput name="message"
-                     id="contact-message"
-                     className="input-message-control"
-                     placeholder={this.state.formControls.message.placeholder}
-                     value={this.state.formControls.message.value}
-                     onChange={this.changeHandler}
-                     touched={this.state.formControls.message.touched ? 1: 0}
-                     valid={this.state.formControls.message.valid ? 1: 0}
-          />
-          <button onClick={this.formSubmitHandler}
-                  disabled={!this.state.formIsValid}>
-                  Submit
-          </button>
+            <TextArea name="message"
+                       id="contact-message"
+                       className="input-message-control"
+                       placeholder={this.state.formControls.message.placeholder}
+                       value={this.state.formControls.message.value}
+                       onChange={this.changeHandler}
+                       touched={this.state.formControls.message.touched ? 1: 0}
+                       valid={this.state.formControls.message.valid ? 1: 0}
+            />
+            <button onClick={this.formSubmitHandler}
+                    disabled={!this.state.formIsValid}
+                    id="contact-submit"
+                    style={{fontWeight: 'bold'}}>
+                    Submit
+            </button>
       </form>
     );
   }
