@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
 
 import TextInput from './TextInput'
 import Email from './Email'
@@ -158,12 +157,11 @@ class ContractForm extends Component {
             valid={this.state.formControls.message.valid ? 1: 0}/>
         </div>
         <div className="centered-rows">
-          <Link smooth to="/#home" className="centered-rows" onClick={this.formSubmitHandler}
-            className="submit-button"
+          <button className="submit-button" onClick={this.formSubmitHandler}
             disabled={!this.state.formIsValid}
             id="contact-submit">
             Submit
-          </Link>
+          </button>
         </div>
       </form>
     )
