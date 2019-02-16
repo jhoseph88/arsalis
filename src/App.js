@@ -21,18 +21,18 @@ const buttonStyle = {
 export default function App(props) {
   return (
     <div id="home" className="App" style={{ background: `linear-gradient(rgba(255,255,255, .7), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
-      <Menu right>
-        <Link to="/about" className="page-links">
+      <Menu id="menu" right>
+        <Link id="menu-about" to="/about" className="page-links">
           <i className="fas fa-info-circle"/>About
         </Link>
-        <Link to="/services" className="page-links">
+        <Link id="menu-service" to="/services" className="page-links">
           <i className="fas fa-briefcase"/>Services
         </Link>
-        <Link smooth to="/#contact" className="page-links">
+        <Link id="menu-contact-us" smooth to="/#contact" className="page-links">
           <i className="fas fa-question-circle"/>Contact Us
         </Link>
       </Menu>
-      <Link to="/" className="logo-home">
+      <Link to="/" className="logo-home" id="logo">
         <img src={logo} alt="logo" width="200px" height="56px"/>
       </Link>
       <p className="slogan">
@@ -46,14 +46,17 @@ export default function App(props) {
       { /* TODO - links should link to areas of service page which detail individual service */ }
       <div className="boxes">
         <Box title="Full Stack"
+          id="box-full-stack"
           icon="fas fa-laptop-code"
           page="services"
           body="We are a one-stop shop for all your application development needs."/>
         <Box title="Cloud Migration"
+          id="box-cloud-migration"
           icon="fas fa-cloud"
           page="services"
           body="Elasticity, scalability, affordability ... We've got you covered."/>
         <Box title="Data Solutions"
+          id="box-data-solutions"
           icon="fas fa-database"
           page="services"
           body="ETL, pipelines, warehousing, and much more... "/>
@@ -62,10 +65,10 @@ export default function App(props) {
         Ready to find out more?
       </p>
       <div className="centered-rows">
-        <Link to="/about" style={ buttonStyle }>
+        <Link id="our-background" to="/about" style={ buttonStyle }>
           <p>Our Background</p>
         </Link>
-        <Link to="/about" style={ buttonStyle }>
+        <Link id="our-offer" to="/about" style={ buttonStyle }>
           <p>What We Offer</p>
         </Link>
       </div>
@@ -77,9 +80,9 @@ export default function App(props) {
       <div className="contact-background" id="contact">
         <Contact id="contact-form"/>
         <div class="centered-rows">
-          <p className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
-          <p className="footer-elt">(804) 937-8481</p>
-          <p className="footer-elt">admin@arsalis.rog</p>
+          <p id="address" className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
+          <p id="phone" className="footer-elt">(804) 937-8481</p>
+          <p id="email" className="footer-elt">admin@arsalis.rog</p>
         </div>
       </div>
     </div>
