@@ -29,6 +29,9 @@ export default class App extends Component {
       className="App"
       style={{ background: `linear-gradient(rgba(255,255,255, .7), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
       <Menu id="menu" right>
+        <Link id="menu-home" to="/" className="page-links">
+          <i className="fas fa-home"/>Home
+        </Link>
         <Link id="menu-about" to="/about" className="page-links">
           <i className="fas fa-info-circle"/>About
         </Link>
