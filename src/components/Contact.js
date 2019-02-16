@@ -46,6 +46,45 @@ class ContractForm extends Component {
         }
       }
     }
+    this.clearFormState = this.clearFormState.bind(this);
+  }
+
+  clearFormState() {
+    this.setState({
+      formIsValid: false,
+      formControls: {
+        name: {
+          value: '',
+          placeholder: 'Name',
+          valid: false,
+          validationRules: {
+            minLength: 3,
+            isRequired: true
+          },
+          touched: false
+        },
+        email: {
+          value: '',
+          placeholder: 'Email',
+          valid: false,
+          validationRules: {
+            isRequired: true,
+            isEmail: true
+          },
+          touched: false
+        },
+        message: {
+          value: '',
+          placeholder: 'Message',
+          valid: false,
+          validationRules: {
+            minLength: 3,
+            isRequired: true
+          },
+          touched: false
+        }
+      }
+    })
   }
 
   changeHandler = event => {
@@ -78,7 +117,7 @@ class ContractForm extends Component {
   formSubmitHandler = () => {
     const formData = {};
     for (let formElementId in this.state.formControls) {
-      formData[formElementId] = this.state.formControls[formElementId].value;
+      formData[formElementId] = this.state.formControls[formElementId].value
     }
     sendEmail(
       "admin@arsalis.org",
@@ -86,6 +125,7 @@ class ContractForm extends Component {
       `Website query from ${formData["name"]} (${formData["email"]})`,
       formData["message"]
     )
+    this.clearFormState()
   }
 
   render () {
@@ -118,7 +158,7 @@ class ContractForm extends Component {
             valid={this.state.formControls.message.valid ? 1: 0}/>
         </div>
         <div className="centered-rows">
-          <Link className="centered-rows" smooth to="/#" onClick={this.formSubmitHandler}
+          <Link smooth to="/#home" className="centered-rows" onClick={this.formSubmitHandler}
             className="submit-button"
             disabled={!this.state.formIsValid}
             id="contact-submit">

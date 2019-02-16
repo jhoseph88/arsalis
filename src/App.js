@@ -20,7 +20,7 @@ const buttonStyle = {
 
 export default function App(props) {
   return (
-    <div id="/" className="App" style={{ background: `linear-gradient(rgba(255,255,255, .7), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
+    <div id="home" className="App" style={{ background: `linear-gradient(rgba(255,255,255, .7), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
       <Menu right>
         <Link to="/about" className="page-links">
           <i className="fas fa-info-circle"/>About
