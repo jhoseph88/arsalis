@@ -129,6 +129,11 @@ a.active {
   border: none;
 }
 
+.footer-elt {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
