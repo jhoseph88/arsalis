@@ -60,7 +60,7 @@ export default function App(props) {
       <p className="slogan">
         Ready to find out more?
       </p>
-      <div className="dual-buttons centered-rows">
+      <div className="centered-rows">
         <Link to="/about" style={ buttonStyle }>
           <p>Our Background</p>
         </Link>
@@ -73,11 +73,11 @@ export default function App(props) {
         <span className="divider-title">Contact Us</span>
         <span className="broken-hr"/>
       </div>
-      <div id="contact" className="contact-background">
-        <Contact className="centered-rows"/>
-      </div>
-      <div className="contact-background" style={{height: '40px'}}>
-        <span style={{padding: '0 20px 0'}}>Address. 4917 Sadler Glen Ct, Glen Allen VA 23060</span><span style={{padding: '0 20px 0'}}>Tel. (804) 937-8481</span><span style={{padding: '0 20px 0'}}>Email. admin@arsalis.rog</span>
+      <div className="contact-background">
+        <Contact id="contact"/>
+        <span style={{padding: '0 20px 0'}}>Address. 4917 Sadler Glen Ct, Glen Allen VA 23060</span>
+        <span style={{padding: '0 20px 0'}}>Tel. (804) 937-8481</span>
+        <span style={{padding: '0 20px 0'}}>Email. admin@arsalis.rog</span>
       </div>
     </div>
   )

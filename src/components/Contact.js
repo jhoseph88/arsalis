@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+
 import TextInput from './TextInput'
 import Email from './Email'
 import Validate from './ValidateInput'
@@ -84,44 +85,48 @@ class ContractForm extends Component {
       `Website query from ${formData["name"]} (${formData["email"]})`,
       formData["message"]
     )
+    window.location.reload();
   }
 
   render () {
     return (
       <form>
-            <TextInput name="name"
-                       id="contact-name"
-                       placeholder={this.state.formControls.name.placeholder}
-                       value={this.state.formControls.name.value}
-                       onChange={this.changeHandler}
-                       touched={this.state.formControls.name.touched ? 1: 0}
-                       valid={this.state.formControls.name.valid ? 1: 0}
-            />
-            <Email name="email"
-                       id="contact-email"
-                       placeholder={this.state.formControls.email.placeholder}
-                       value={this.state.formControls.email.value}
-                       onChange={this.changeHandler}
-                       touched={this.state.formControls.email.touched ? 1: 0}
-                       valid={this.state.formControls.email.valid ? 1: 0}
-            />
-            <TextArea name="message"
-                       id="contact-message"
-                       className="input-message-control"
-                       placeholder={this.state.formControls.message.placeholder}
-                       value={this.state.formControls.message.value}
-                       onChange={this.changeHandler}
-                       touched={this.state.formControls.message.touched ? 1: 0}
-                       valid={this.state.formControls.message.valid ? 1: 0}
-            />
-            <button onClick={this.formSubmitHandler}
-                    disabled={!this.state.formIsValid}
-                    id="contact-submit"
-                    style={{fontWeight: 'bold'}}>
-                    Submit
-            </button>
+        <div className="centered-rows">
+          <TextInput name="name"
+            id="contact-name"
+            placeholder={this.state.formControls.name.placeholder}
+            value={this.state.formControls.name.value}
+            onChange={this.changeHandler}
+            touched={this.state.formControls.name.touched ? 1: 0}
+            valid={this.state.formControls.name.valid ? 1: 0}/>
+          <Email name="email"
+            id="contact-email"
+            placeholder={this.state.formControls.email.placeholder}
+            value={this.state.formControls.email.value}
+            onChange={this.changeHandler}
+            touched={this.state.formControls.email.touched ? 1: 0}
+            valid={this.state.formControls.email.valid ? 1: 0}/>
+        </div>
+        <div className="centered-rows">
+          <TextArea name="message"
+            id="contact-message"
+            className="input-message-control"
+            placeholder={this.state.formControls.message.placeholder}
+            value={this.state.formControls.message.value}
+            onChange={this.changeHandler}
+            touched={this.state.formControls.message.touched ? 1: 0}
+            valid={this.state.formControls.message.valid ? 1: 0}/>
+          </div>
+        <div className="centered-rows">
+          <button onClick={this.formSubmitHandler}
+            className="submit-button"
+            disabled={!this.state.formIsValid}
+            id="contact-submit">
+            Submit
+          </button>
+        </div>
       </form>
-    );
+    )
   }
 }
 
