@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
 
 import TextInput from './TextInput'
 import Email from './Email'
@@ -85,7 +86,6 @@ class ContractForm extends Component {
       `Website query from ${formData["name"]} (${formData["email"]})`,
       formData["message"]
     )
-    window.location.reload();
   }
 
   render () {
@@ -116,14 +116,14 @@ class ContractForm extends Component {
             onChange={this.changeHandler}
             touched={this.state.formControls.message.touched ? 1: 0}
             valid={this.state.formControls.message.valid ? 1: 0}/>
-          </div>
+        </div>
         <div className="centered-rows">
-          <button onClick={this.formSubmitHandler}
+          <Link className="centered-rows" smooth to="/#" onClick={this.formSubmitHandler}
             className="submit-button"
             disabled={!this.state.formIsValid}
             id="contact-submit">
             Submit
-          </button>
+          </Link>
         </div>
       </form>
     )

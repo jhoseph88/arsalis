@@ -1,6 +1,7 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import { stack as Menu } from 'react-burger-menu'
+
 import Box from './components/Box'
 import logo from './logo.png'
 import './App.css'
@@ -19,7 +20,7 @@ const buttonStyle = {
 
 export default function App(props) {
   return (
-    <div id="outer-container" className="App" style={{ background: `linear-gradient(rgba(255,255,255, .7), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
+    <div id="/" className="App" style={{ background: `linear-gradient(rgba(255,255,255, .7), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
       <Menu right>
         <Link to="/about" className="page-links">
           <i className="fas fa-info-circle"/>About
@@ -75,7 +76,7 @@ export default function App(props) {
       </div>
       <div className="contact-background" id="contact">
         <Contact id="contact-form"/>
-        <div className="centered-rows">
+        <div class="centered-rows">
           <p className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
           <p className="footer-elt">(804) 937-8481</p>
           <p className="footer-elt">admin@arsalis.rog</p>
