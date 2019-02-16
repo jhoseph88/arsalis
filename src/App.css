@@ -87,8 +87,8 @@ a.active {
 }
 
 .form-control {
-  width: 40%;
   border: none;
+  flex-grow: 1;
   padding: 10px;
   margin: 20px;
   font-weight: bold;
@@ -108,7 +108,8 @@ a.active {
 }
 
 .input-message-control {
-  width: 89%;
+  flex-grow: 1;
+  margin: 20px;
   height: 140px;
   padding: 10px;
   background-color: lightgray;
