@@ -1,0 +1,57 @@
+import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
+
+import Box from './Box'
+
+const buttonStyle = {
+  backgroundColor: 'gray',
+  color: 'lightgray',
+  width: '30%',
+  margin: '20px',
+  textAlign: 'center',
+  fontWeight: 'bold'
+}
+
+export default function Home(props) {
+  return (
+    <div>
+      <p className="slogan">
+        <span id="human">Humans</span> helping <span id="human">humans</span>. <span id="it">IT</span> is just what we do...
+      </p>
+      <div className="divider">
+        <span className="broken-hr"/>
+        <span className="divider-title">Our Services</span>
+        <span className="broken-hr"/>
+      </div>
+      { /* TODO - links should link to areas of service page which detail individual service */ }
+      <div className="boxes">
+        <Box title="Full Stack"
+          id="box-full-stack"
+          icon="fas fa-laptop-code"
+          page="services"
+          body="We are a one-stop shop for all your application development needs."/>
+        <Box title="Cloud Migration"
+          id="box-cloud-migration"
+          icon="fas fa-cloud"
+          page="services"
+          body="Elasticity, scalability, affordability ... We've got you covered."/>
+        <Box title="Data Solutions"
+          id="box-data-solutions"
+          icon="fas fa-database"
+          page="services"
+          body="ETL, pipelines, warehousing, and much more... "/>
+      </div>
+      <p className="slogan">
+        Ready to find out more?
+      </p>
+      <div className="centered-rows">
+        <Link id="our-background" to="/about" style={ buttonStyle }>
+          <p>Our Background</p>
+        </Link>
+        <Link id ="our-offer" to="/about" style={ buttonStyle }>
+          <p>What We Offer</p>
+        </Link>
+      </div>
+    </div>
+  )
+}
