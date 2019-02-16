@@ -129,7 +129,7 @@ class ContractForm extends Component {
 
   render () {
     return (
-      <form>
+      <div>
         <div className="centered-rows">
           <TextInput name="name"
             id="contact-name"
@@ -163,7 +163,7 @@ class ContractForm extends Component {
             Submit
           </button>
         </div>
-      </form>
+      </div>
     )
   }
 }
