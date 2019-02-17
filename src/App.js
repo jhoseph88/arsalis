@@ -52,13 +52,13 @@ export default class App extends Component {
       </div>
       <div className="contact-background" id="contact" ref={ this.contactRef }>
         <Contact id="contact-form"/>
-        <div class="centered-rows">
+        <div className="centered-rows">
           <p id="address" className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
           <p id="phone" className="footer-elt">(804) 937-8481</p>
           <p id="email" className="footer-elt">admin@arsalis.rog</p>
         </div>
         <div>
-          <ScrollUpButton ShowAtPosition={25} EasingType='linear'/>
+          <ScrollUpButton ShowAtPosition={25} EasingType='linear' ToggledStyle={{left: '3%', right: 'auto'}} style={{height: '30px', width: '30px'}}/>
         </div>
       </div>
     </div>

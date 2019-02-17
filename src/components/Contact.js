@@ -124,7 +124,7 @@ class ContractForm extends Component {
       `Website query from ${formData["name"]} (${formData["email"]})`,
       formData["message"]
     )
-    this.clearFormState()
+    this.clearFormState();
   }
 
   render () {
