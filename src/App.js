@@ -9,6 +9,7 @@ import background from './background_flipped.png'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
+import Divider from './components/Divider'
 
 
 export default class App extends Component {
@@ -45,19 +46,15 @@ export default class App extends Component {
       <Link to="/" className="logo-home">
         <img src={logo} alt="logo" width="200px" height="56px"/>
       </Link>
-      <Route path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <div className="divider">
-        <span className="broken-hr"/>
-        <span className="divider-title">Contact Us</span>
-        <span className="broken-hr"/>
-      </div>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/about" component={About}/>
+      <Divider text="Contact Us"/>
       <div className="contact-background" id="contact" ref={ this.contactRef }>
         <Contact id="contact-form"/>
         <div class="centered-rows">
           <p id="address" className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
           <p id="phone" className="footer-elt">(804) 937-8481</p>
-          <p id="email" className="footer-elt">admin@arsalis.rog</p>
+          <p id="email" className="footer-elt">admin@arsalis.org</p>
         </div>
       </div>
     </div>

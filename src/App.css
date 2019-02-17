@@ -68,19 +68,6 @@ a:hover, a:focus {
   font-weight: bolder;
 }
 
-.slide {
-  background: red;
-}
-
-a.active {
-  color: orange;
-}
-
-.background-image {
-  width: -webkit-fill-available;
-  height: 500px;
-}
-
 .contact-background {
   background-color: dimgray;
   color: lightgray;
@@ -91,7 +78,7 @@ a.active {
   flex-grow: 1;
   padding: 10px;
   margin: 20px 20px 0px 20px;
-  font-weight: bold;
+  font-size: 16px;
   background-color: lightgray;
   color: black;
 }
@@ -136,6 +123,16 @@ a.active {
   margin-left: 20px;
 }
 
+.trans-box {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  text-align: center;
+  justify-content: center;
+  background: rgba(0,0,0, .3);
+  padding: 10px;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -151,7 +148,7 @@ a.active {
 }
 
 /* Position and sizing of clickable cross button */
-.bm-cross-button { }
+.bm-cross-button {}
 
 /* Color/shape of close button cross */
 .bm-cross {
@@ -163,6 +160,7 @@ a.active {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  overflow-y: hidden !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
