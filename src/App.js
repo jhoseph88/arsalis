@@ -10,6 +10,7 @@ import background from './background_flipped.png'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
+import Services from './components/Services'
 
 
 export default class App extends Component {
