@@ -132,10 +132,12 @@ a:hover, a:focus {
   justify-content: center;
   background: rgba(0,0,0, .3);
   padding: 10px;
+  width: 480px;
 }
 
 .side-box {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 20px;
