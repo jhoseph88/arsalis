@@ -151,7 +151,7 @@ a.active {
 }
 
 /* Position and sizing of clickable cross button */
-.bm-cross-button { }
+.bm-cross-button {}
 
 /* Color/shape of close button cross */
 .bm-cross {
@@ -163,6 +163,7 @@ a.active {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  overflow-y: hidden !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
