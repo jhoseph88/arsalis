@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import { stack as Menu } from 'react-burger-menu'
+import ScrollUpButton from 'react-scroll-up-button'
 
 import Box from './components/Box'
 import logo from './logo.png'
@@ -96,6 +97,9 @@ export default class App extends Component {
             <p id="phone" className="footer-elt">(804) 937-8481</p>
             <p id="email" className="footer-elt">admin@arsalis.rog</p>
           </div>
+        </div>
+        <div>
+          <ScrollUpButton ShowAtPosition={25} EasingType='linear'/>
         </div>
       </div>
     )
