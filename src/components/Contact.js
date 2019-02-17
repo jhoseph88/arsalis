@@ -129,7 +129,7 @@ class ContractForm extends Component {
 
   render () {
     return (
-      <div>
+      <div style={{width: '66%', margin: '0 0 0 17%'}}>
         <div className="centered-rows">
           <TextInput name="name"
             id="contact-name"
