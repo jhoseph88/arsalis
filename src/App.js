@@ -55,7 +55,7 @@ export default class App extends Component {
         <div className="centered-rows">
           <p id="address" className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
           <p id="phone" className="footer-elt">(804) 937-8481</p>
-          <p id="email" className="footer-elt">admin@arsalis.rog</p>
+          <p id="email" className="footer-elt">admin@arsalis.org</p>
         </div>
         <div>
           <ScrollUpButton ShowAtPosition={25} EasingType='linear' ToggledStyle={{left: '3%', right: 'auto'}} style={{height: '30px', width: '30px'}}/>
