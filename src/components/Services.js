@@ -48,7 +48,11 @@ export default function Services(props) {
       <Divider text="Data Solutions"/>
       <div className="side-box" id="data">
         <p className="trans-box">
-          Cameron to help ...
+          Data is the currency of the twenty-first century. We understand that
+          parlaying your organization's data is a vital component to a healthy
+          tech-literate business. We are here to help you store, organize,
+          transform, and analyze your data affordably, efficiently, and
+          ethically in a secure cloud environment.
         </p>
         <i className="fas fa-database" style={iconStyle}/>
       </div>
