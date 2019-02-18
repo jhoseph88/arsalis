@@ -42,10 +42,10 @@ export default function Home(props) {
         Ready to find out more?
       </p>
       <div className="centered-rows">
-        <Link id="our-background" to="/about" style={ buttonStyle }>
+        <Link id="our-background" to="/about#background" style={ buttonStyle }>
           <p>Our Background</p>
         </Link>
-        <Link id ="our-offer" to="/about" style={ buttonStyle }>
+        <Link id ="our-offer" to="/about#mission" style={ buttonStyle }>
           <p>What We Offer</p>
         </Link>
       </div>
