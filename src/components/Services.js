@@ -60,7 +60,13 @@ export default function Services(props) {
       <div className="side-box" id="dev-ops">
         <i className="fas fa-cogs" style={iconStyle}/>
         <p className="trans-box">
-          Cameron to help ...
+          Let us help you automate your tedious system administration tasks so
+          you can spend your precious time getting work done, not maintaining
+          fragile configurations. We will provide you with infrastructure as
+          code which will help you maintain a clean, efficient, and modular
+          cloud environment. Want to move to a DevOps or YBYO paradigm? We will
+          provide training and information on industry best practices to put
+          you on the same page with the industry leaders in automation.
         </p>
       </div>
     </div>
