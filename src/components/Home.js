@@ -26,17 +26,20 @@ export default function Home(props) {
           id="box-full-stack"
           icon="fas fa-laptop-code"
           page="services"
-          body="We are a one-stop shop for all your application development needs."/>
+          body="We are a one-stop shop for all your application development needs."
+          anchor="#full-stack"/>
         <Box title="Cloud Migration"
           id="box-cloud-migration"
           icon="fas fa-cloud"
           page="services"
-          body="Elasticity, scalability, affordability ... We've got you covered."/>
-        <Box title="Data Solutions"
+          body="Elasticity, scalability, affordability ... We've got you covered."
+          anchor="#cloud"/>
+      <Box title="Data Solutions"
           id="box-data-solutions"
           icon="fas fa-database"
           page="services"
-          body="ETL, pipelines, warehousing, and much more... "/>
+          body="ETL, pipelines, warehousing, and much more..."
+          anchor="#data"/>
       </div>
       <p className="slogan">
         Ready to find out more?

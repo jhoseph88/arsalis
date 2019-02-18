@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link'
 
 export default function Box(props) {
   const boxStyle = {
@@ -20,7 +20,7 @@ export default function Box(props) {
     justifyContent: 'center'
   }
   return (
-    <Link style={ boxStyle } to={ props.page }>
+    <Link style={ boxStyle } to={ `${props.page}${props.anchor}` }>
       <h2>{ props.title }</h2>
       <i className={ props.icon } style={ iconStyle }/>
       <h6>{ props.body }</h6>
