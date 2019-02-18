@@ -49,7 +49,7 @@ export default class App extends Component {
         <Divider text="Contact Us"/>
         <div className="contact-background" id="contact" ref={ this.contactRef }>
           <Contact id="contact-form"/>
-          <div class="centered-rows">
+          <div className="centered-rows">
             <p id="address" className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
             <p id="phone" className="footer-elt">(804) 937-8481</p>
             <p id="email" className="footer-elt">admin@arsalis.org</p>
