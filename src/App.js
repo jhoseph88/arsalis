@@ -6,7 +6,6 @@ import ScrollUpButton from 'react-scroll-up-button'
 
 import logo from './logo.png'
 import './App.css'
-import background from './background_flipped.png'
 import Home from './components/Home'
 import About from './components/About'
 import Services from './components/Services'
@@ -23,9 +22,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div id="home"
-        className="App"
-        style={{ background: `linear-gradient(rgba(255,255,255, .7), rgba(255,255,255)), url(${background})`, backgroundSize: 'cover'}}>
+      <div id="home" className="App">
         <Menu id="menu" right>
           <Link id="menu-home" to="/" className="page-links">
             <i className="fas fa-home"/>Home
