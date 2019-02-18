@@ -13,12 +13,12 @@ export default function Services(props) {
         <p className="trans-box">
           Whether you are looking to expand, update, or redefine your online
           presence, we will work closely and diligently with you to understand
-          your goals and aspirations. Our aim is to help you along in your
+          your goals and aspirations before writing a single line of code. Our aim is to help you along in your
           journey of building a web site or service which you feel represents
           your personality and values. Whether it's an internal tool or a
           customer-facing web app, we will apply the most elegant,
-          cutting-edge technologies in our toolkit to deliver the application
-          you need.
+          cutting-edge technologies in our toolkit to deliver applications
+          tailor-made to you needs.
         </p>
       </div>
       <Divider text="Cloud Migration & Consulting"/>
@@ -28,7 +28,7 @@ export default function Services(props) {
           multi-national corporations alike to scale their computing and
           storage infrastructures on an as-needed basis. We are excited to help
           you strategize and implement cloud systems which will jumpstart your
-          business and save you time and money.
+          business while saving you time and money.
         </p>
         <i className="fas fa-cloud" style={iconStyle}/>
       </div>
@@ -38,11 +38,12 @@ export default function Services(props) {
         <p className="trans-box">
           If a mobile-friendly website doesn't cover your business
           requirements, we would be happy to build you a contemporary,
-          cross-platform mobile application. Because of our philosphy of
-          simplicity and cross-platform functionality, we prefer tools like
-          React Native and Flutter. However, we are flexible when it comes to
-          languages and frameworks. We are here to serve you, and we are open
-          to leveraging any technologies which will fit your use case.
+          cross-platform mobile application. Tools like React Native and
+          Flutter align best with our philosphy of simplicity, ease-of-use, and
+          cross-platform functionality. However, we are flexible when it comes
+          to languages and frameworks. Fundamentally, we are here to serve you,
+          and we are open to leveraging any technologies which will fit your
+          use case.
         </p>
       </div>
       <Divider text="Data Solutions"/>
@@ -65,8 +66,8 @@ export default function Services(props) {
           fragile configurations. We will provide you with infrastructure as
           code which will help you maintain a clean, efficient, and modular
           cloud environment. Want to move to a DevOps or YBYO paradigm? We will
-          provide training and information on industry best practices to put
-          you on the same page with the industry leaders in automation.
+          provide training and information best practices to put you on the
+          same page with the industry leaders in automation.
         </p>
       </div>
     </div>
