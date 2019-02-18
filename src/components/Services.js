@@ -29,7 +29,7 @@ export default class Services extends Component {
         </div>
         <Divider text="Mobile Applications"/>
         <div className="side-box" id="full-stack">
-          <i className="fas fa-handshake" style={iconStyle}/>
+          <i className="fas fa-mobile-alt" style={iconStyle}/>
           <p className="trans-box">
             Cameron to help ...
           </p>
@@ -43,7 +43,7 @@ export default class Services extends Component {
         </div>
         <Divider text="DevOps - Infrastructure & Deployment"/>
         <div className="side-box" id="full-stack">
-          <i className="fas fa-handshake" style={iconStyle}/>
+          <i className="fas fa-cogs" style={iconStyle}/>
           <p className="trans-box">
             Cameron to help ...
           </p>
