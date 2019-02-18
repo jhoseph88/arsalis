@@ -5,85 +5,18 @@ import Email from './Email'
 import Validate from './ValidateInput'
 import sendEmail from '../services/email'
 import TextArea from './TextArea'
+import { contactFormDefaults } from '../constants'
 
 class ContractForm extends Component {
   constructor (props) {
     super(props);
 
-    this.state = {
-      formIsValid: false,
-      formControls: {
-        name: {
-          value: '',
-          placeholder: 'Name',
-          valid: false,
-          validationRules: {
-            minLength: 3,
-            isRequired: true
-          },
-          touched: false
-        },
-        email: {
-          value: '',
-          placeholder: 'Email',
-          valid: false,
-          validationRules: {
-            isRequired: true,
-            isEmail: true
-          },
-          touched: false
-        },
-        message: {
-          value: '',
-          placeholder: 'Message',
-          valid: false,
-          validationRules: {
-            minLength: 3,
-            isRequired: true
-          },
-          touched: false
-        }
-      }
-    }
+    this.state = contactFormDefaults;
     this.clearFormState = this.clearFormState.bind(this);
   }
 
   clearFormState() {
-    this.setState({
-      formIsValid: false,
-      formControls: {
-        name: {
-          value: '',
-          placeholder: 'Name',
-          valid: false,
-          validationRules: {
-            minLength: 3,
-            isRequired: true
-          },
-          touched: false
-        },
-        email: {
-          value: '',
-          placeholder: 'Email',
-          valid: false,
-          validationRules: {
-            isRequired: true,
-            isEmail: true
-          },
-          touched: false
-        },
-        message: {
-          value: '',
-          placeholder: 'Message',
-          valid: false,
-          validationRules: {
-            minLength: 3,
-            isRequired: true
-          },
-          touched: false
-        }
-      }
-    })
+    this.setState(contactFormDefaults)
   }
 
   changeHandler = event => {
@@ -124,7 +57,7 @@ class ContractForm extends Component {
       `Website query from ${formData["name"]} (${formData["email"]})`,
       formData["message"]
     )
-    this.clearFormState()
+    this.clearFormState();
   }
 
   render () {
