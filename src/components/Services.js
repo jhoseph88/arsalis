@@ -24,7 +24,11 @@ export default function Services(props) {
       <Divider text="Cloud Migration & Consulting"/>
       <div className="side-box" id="cloud">
         <p className="trans-box">
-          Cameron to help ...
+          The cloud computing revolution has allowed tiny start-ups and
+          multi-national corporations alike to scale their computing and
+          storage infrastructures on an as-needed basis. We are excited to help
+          you strategize and implement cloud systems which will jumpstart your
+          business and save you time and money.
         </p>
         <i className="fas fa-cloud" style={iconStyle}/>
       </div>
@@ -32,7 +36,13 @@ export default function Services(props) {
       <div className="side-box" id="mobile">
         <i className="fas fa-mobile-alt" style={iconStyle}/>
         <p className="trans-box">
-          Cameron to help ...
+          If a mobile-friendly website doesn't cover your business
+          requirements, we would be happy to build you a contemporary,
+          cross-platform mobile application. Because of our philosphy of
+          simplicity and cross-platform functionality, we prefer tools like
+          React Native and Flutter. However, we are flexible when it comes to
+          languages and frameworks. We are here to serve you, and we are open
+          to leveraging any technologies which will fit your use case.
         </p>
       </div>
       <Divider text="Data Solutions"/>
