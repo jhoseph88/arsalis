@@ -9,6 +9,7 @@ import './App.css'
 import background from './background_flipped.png'
 import Home from './components/Home'
 import About from './components/About'
+import Services from './components/Services'
 import Contact from './components/Contact'
 import Divider from './components/Divider'
 import { scrollToRef } from './utils/helpers'
@@ -44,6 +45,7 @@ export default class App extends Component {
         </Link>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
+        <Route exact path="/services" component={Services}/>
         <Divider text="Contact Us"/>
         <div className="contact-background" id="contact" ref={ this.contactRef }>
           <Contact id="contact-form"/>
