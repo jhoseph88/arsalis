@@ -53,7 +53,7 @@ export default class App extends Component {
           </div>
         </div>
         <div>
-          <ScrollUpButton ShowAtPosition={25} EasingType='linear' ToggledStyle={{left: '3%', right: 'auto'}} style={{height: '30px', width: '30px'}}/>
+          <ScrollUpButton ShowAtPosition={25} EasingType='linear' style={{height: '30px', width: '30px'}}/>
         </div>
       </div>
     )
