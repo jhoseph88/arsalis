@@ -1,5 +1,6 @@
 export const contactFormDefaults = {
   formIsValid: false,
+  formIsSubmitted: false,
   formControls: {
     name: {
       value: '',

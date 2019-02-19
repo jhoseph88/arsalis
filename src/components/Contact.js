@@ -9,10 +9,10 @@ import { contactFormDefaults } from '../constants'
 
 class ContractForm extends Component {
   constructor (props) {
-    super(props);
+    super(props)
 
-    this.state = contactFormDefaults;
-    this.clearFormState = this.clearFormState.bind(this);
+    this.state = contactFormDefaults
+    this.clearFormState = this.clearFormState.bind(this)
   }
 
   clearFormState() {
@@ -20,80 +20,74 @@ class ContractForm extends Component {
   }
 
   changeHandler = event => {
-    const name = event.target.name;
-    const value = event.target.value;
+    const name = event.target.name
+    const value = event.target.value
 
-    const updatedControls = {
-	     ...this.state.formControls
-    };
-    const updatedFormElement = {
-	     ...updatedControls[name]
-    };
-    updatedFormElement.value = value;
-    updatedFormElement.touched = true;
-    updatedFormElement.valid = Validate(value, updatedFormElement.validationRules);
+    const updatedControls = { ...this.state.formControls}
+    const updatedFormElement = { ...updatedControls[name] }
+    updatedFormElement.value = value
+    updatedFormElement.touched = true
+    updatedFormElement.valid = Validate(value, updatedFormElement.validationRules)
 
-    updatedControls[name] = updatedFormElement;
+    updatedControls[name] = updatedFormElement
 
     let formIsValid = true;
-    for (let inputIdentifier in updatedControls) {
-      formIsValid = updatedControls[inputIdentifier].valid && formIsValid;
-    }
+    for (let inputIdentifier in updatedControls)
+      formIsValid = updatedControls[inputIdentifier].valid && formIsValid
 
-    this.setState({
-    	formControls: updatedControls,
-      formIsValid: formIsValid
-    });
+    this.setState({ formControls: updatedControls, formIsValid: formIsValid })
   }
 
-  formSubmitHandler = () => {
-    const formData = {};
-    for (let formElementId in this.state.formControls) {
+  formSubmitHandler = async () => {
+    // facilitates change of button text to "Submitting..." for user feedback
+    this.setState({ formIsSubmitted: true })
+    const formData = {}
+    for (let formElementId in this.state.formControls)
       formData[formElementId] = this.state.formControls[formElementId].value
-    }
-    sendEmail(
-      "admin@arsalis.org",
-      "admin@arsalis.org",
-      `Website query from ${formData["name"]} (${formData["email"]})`,
-      formData["message"]
+    await sendEmail(
+      'admin@arsalis.org',
+      'admin@arsalis.org',
+      `Website query from ${formData['name']} (${formData['email']})`,
+      formData['message']
     )
-    this.clearFormState();
+    this.clearFormState()
   }
 
   render () {
     return (
-      <div style={{width: '66.1%', margin: '0 0 0 17%'}}>
-        <div className="centered-rows">
-          <TextInput name="name"
-            id="contact-name"
+      <div style={{ width: '66.1%', margin: '0 0 0 17%' }}>
+        <div className='centered-rows'>
+          <TextInput name='name'
+            id='contact-name'
             placeholder={this.state.formControls.name.placeholder}
             value={this.state.formControls.name.value}
             onChange={this.changeHandler}
             touched={this.state.formControls.name.touched ? 1: 0}
             valid={this.state.formControls.name.valid ? 1: 0}/>
-          <Email name="email"
-            id="contact-email"
+          <Email name='email'
+            id='contact-email'
             placeholder={this.state.formControls.email.placeholder}
             value={this.state.formControls.email.value}
             onChange={this.changeHandler}
             touched={this.state.formControls.email.touched ? 1: 0}
             valid={this.state.formControls.email.valid ? 1: 0}/>
         </div>
-        <div className="centered-rows">
-          <TextArea name="message"
-            id="contact-message"
-            className="input-message-control"
+        <div className='centered-rows'>
+          <TextArea name='message'
+            id='contact-message'
+            className='input-message-control'
             placeholder={this.state.formControls.message.placeholder}
             value={this.state.formControls.message.value}
             onChange={this.changeHandler}
             touched={this.state.formControls.message.touched ? 1: 0}
             valid={this.state.formControls.message.valid ? 1: 0}/>
         </div>
-        <div className="centered-rows">
-          <button className="submit-button" onClick={this.formSubmitHandler}
+        <div className='centered-rows'>
+          <button className='submit-button' onClick={this.formSubmitHandler}
             disabled={!this.state.formIsValid}
-            id="contact-submit">
-            Submit
+            id='contact-submit'
+            style={{ cursor:  this.state.formIsValid ? 'pointer' : 'auto' }}>
+            { this.state.formIsSubmitted ? 'Submitting...' : 'Submit' }
           </button>
         </div>
       </div>
