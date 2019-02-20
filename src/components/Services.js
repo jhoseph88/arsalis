@@ -18,7 +18,7 @@ export default function Services(props) {
           your personality and values. Whether it's an internal tool or a
           customer-facing web app, we will apply the most elegant,
           cutting-edge technologies in our toolkit to deliver applications
-          tailor-made to you needs.
+          tailor-made to your needs.
         </p>
       </div>
       <Divider id="cloud-title" text="Cloud Migration & Consulting"/>
