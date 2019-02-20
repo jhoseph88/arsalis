@@ -33,7 +33,7 @@ export default class App extends Component {
           <Link id="menu-service" to="/services" className="page-links">
             <i className="fas fa-briefcase"/>Services
           </Link>
-          <Link id="menu-contact-us" to="#contact" className="page-links" onClick={ () => scrollToRef(this.contactRef) }>
+          <Link id="menu-contact-us" smooth to="#contact" className="page-links" onClick={ () => scrollToRef(this.contactRef) }>
             <i className="fas fa-question-circle"/>Contact Us
           </Link>
         </Menu>
