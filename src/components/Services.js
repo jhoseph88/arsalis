@@ -7,7 +7,7 @@ export default function Services(props) {
   return (
     <div id="services">
       <h1 className="centered-rows">We Come to YOU</h1>
-      <Divider text="Full-Stack Web Applications"/>
+      <Divider id="full-stack-title" text="Full-Stack Web Applications"/>
       <div className="side-box" id="full-stack">
         <i className="fas fa-laptop-code" style={iconStyle}/>
         <p className="trans-box">
@@ -21,7 +21,7 @@ export default function Services(props) {
           tailor-made to you needs.
         </p>
       </div>
-      <Divider text="Cloud Migration & Consulting"/>
+      <Divider id="cloud-title" text="Cloud Migration & Consulting"/>
       <div className="side-box" id="cloud">
         <p className="trans-box">
           The cloud computing revolution has allowed tiny start-ups and
@@ -32,7 +32,7 @@ export default function Services(props) {
         </p>
         <i className="fas fa-cloud" style={iconStyle}/>
       </div>
-      <Divider text="Mobile Applications"/>
+      <Divider id="mobile-title" text="Mobile Applications"/>
       <div className="side-box" id="mobile">
         <i className="fas fa-mobile-alt" style={iconStyle}/>
         <p className="trans-box">
@@ -46,7 +46,7 @@ export default function Services(props) {
           use case.
         </p>
       </div>
-      <Divider text="Data Solutions"/>
+      <Divider id="data-title" text="Data Solutions"/>
       <div className="side-box" id="data">
         <p className="trans-box">
           Data is the currency of the twenty-first century. We understand that
@@ -57,7 +57,7 @@ export default function Services(props) {
         </p>
         <i className="fas fa-database" style={iconStyle}/>
       </div>
-      <Divider text="DevOps - Infrastructure & Deployment"/>
+      <Divider id="dev-ops-title" text="DevOps - Infrastructure & Deployment"/>
       <div className="side-box" id="dev-ops">
         <i className="fas fa-cogs" style={iconStyle}/>
         <p className="trans-box">

@@ -13,7 +13,7 @@ export default class About extends Component {
     return (
       <div>
         <h1 className="centered-rows">Why choose Arsalis?</h1>
-        <Divider text="Our Mission"/>
+        <Divider id="mission-title" text="Our Mission"/>
         <div className="side-box" id="mission">
           <i className="fas fa-handshake" style={iconStyle}/>
           <p className="trans-box">
@@ -24,8 +24,8 @@ export default class About extends Component {
              full-time engineering team.
           </p>
         </div>
-        <Divider text="Our Values"/>
-        <div className="side-box">
+        <Divider id="values-title" text="Our Values"/>
+        <div className="side-box" id="values">
           <p className="trans-box">
             We believe in getting to know our clients as individuals is a key
             prerequisite to building for them products they can understand,
@@ -35,7 +35,7 @@ export default class About extends Component {
           </p>
           <i className="fas fa-hand-holding-heart" style={iconStyle}/>
         </div>
-        <Divider text="Our Background"/>
+        <Divider id="background-title" text="Our Background"/>
         <div className="side-box" id="background">
           <i className="fas fa-people-carry" style={iconStyle}/>
           <p className="trans-box">

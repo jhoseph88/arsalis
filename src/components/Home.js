@@ -27,28 +27,28 @@ export default function Home(props) {
           icon="fas fa-laptop-code"
           page="services"
           body="We are a one-stop shop for all your application development needs."
-          anchor="#full-stack"/>
+          anchor="#full-stack-title"/>
         <Box title="Cloud Migration"
           id="box-cloud-migration"
           icon="fas fa-cloud"
           page="services"
           body="Elasticity, scalability, affordability ... We've got you covered."
-          anchor="#cloud"/>
+          anchor="#cloud-title"/>
       <Box title="Data Solutions"
           id="box-data-solutions"
           icon="fas fa-database"
           page="services"
           body="ETL, pipelines, warehousing, and much more..."
-          anchor="#data"/>
+          anchor="#data-title"/>
       </div>
       <p className="slogan">
         Ready to find out more?
       </p>
       <div className="centered-rows">
-        <Link id="our-background" to="/about#background" style={ buttonStyle }>
+        <Link id="our-background" to="/about#background-title" style={ buttonStyle }>
           <p>Our Background</p>
         </Link>
-        <Link id ="our-offer" to="/about#mission" style={ buttonStyle }>
+        <Link id ="our-offer" to="/about#mission-title" style={ buttonStyle }>
           <p>What We Offer</p>
         </Link>
       </div>
