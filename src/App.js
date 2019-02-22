@@ -18,22 +18,33 @@ export default class App extends Component {
   constructor(props) {
     super(props)
     this.contactRef = React.createRef()
+    this.state = { menuOpen: false }
+
+    this.closeMenu = this.closeMenu.bind(this)
+  }
+
+  // This is used to close the menu, e.g. when a user clicks a menu item
+  closeMenu () {
+    this.setState({menuOpen: false})
   }
 
   render() {
     return (
       <div id="home" className="App">
-        <Menu id="menu" right>
+        <Menu id="menu" isOpen={ this.state.menuOpen } right>
           <Link id="menu-home" to="/" className="page-links">
             <i className="fas fa-home"/>Home
           </Link>
-          <Link id="menu-about" to="/about" className="page-links">
+          <Link id="menu-about" to="/about" className="page-links" onClick={ this.closeMenu }>
             <i className="fas fa-info-circle"/>About
           </Link>
-          <Link id="menu-service" to="/services" className="page-links">
+          <Link id="menu-service" to="/services" className="page-links" onClick={ this.closeMenu }>
             <i className="fas fa-briefcase"/>Services
           </Link>
-          <Link id="menu-contact-us" smooth to="#contact" className="page-links" onClick={ () => scrollToRef(this.contactRef) }>
+          <Link id="menu-contact-us"
+            smooth to="#contact"
+            className="page-links"
+            onClick={ () => { this.closeMenu(); scrollToRef(this.contactRef) } }>
             <i className="fas fa-question-circle"/>Contact Us
           </Link>
         </Menu>
