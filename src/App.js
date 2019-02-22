@@ -28,10 +28,21 @@ export default class App extends Component {
     this.setState({menuOpen: false})
   }
 
+  handleStateChange(newState) {
+    window.setTimeout(() => { // This is necessary to force the blur to happen after in the event loop
+      if (newState.isOpen) {
+        document.activeElement.blur()
+      }
+    })
+  }
+
   render() {
     return (
       <div id="home" className="App">
-        <Menu id="menu" isOpen={ this.state.menuOpen } right>
+        <Menu id="menu"
+          isOpen={ this.state.menuOpen }
+          onStateChange={ this.handleStateChange }
+          right>
           <Link id="menu-home" to="/" className="page-links">
             <i className="fas fa-home"/>Home
           </Link>
