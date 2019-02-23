@@ -72,6 +72,7 @@ export default class App extends Component {
             <p id="address" className="footer-elt">4917 Sadler Glen Ct, Glen Allen VA 23060</p>
             <p id="phone" className="footer-elt">(804) 937-8481</p>
             <p id="email" className="footer-elt">admin@arsalis.org</p>
+            <p id="copyright" className="footer-elt">© Arsalis 2019</p>
           </div>
         </div>
         <div>
