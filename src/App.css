@@ -1,32 +1,215 @@
 .App {
+  position: relative;
+}
+
+.App:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+  background-image: url(background_flipped.png);
+  opacity: .3;
+}
+
+.logo-home {
+  display: flex;
+  padding: 20px;
+  width: 200px;
+  margin-right: auto;
+}
+
+.page-links {
+  display: flex;
+}
+
+.page-links > i {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+a:hover, a:focus {
+  color: gray;
+}
+
+.slogan {
+  font-size: 36px;
+  margin: 20px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.divider {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.divider-title {
+  width: 30%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.broken-hr {
+  background-color: black;
+  height: 1px;
+  width: 30%;
+  margin-top: 12px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#human {
+  font-weight: bolder;
+}
+
+#it {
+  font-weight: bolder;
+}
+
+.contact-background {
+  background-color: dimgray;
+  color: lightgray;
+}
+
+.form-control {
+  border: none;
+  flex-grow: 1;
+  padding: 10px;
+  margin: 20px 20px 0px 20px;
+  font-size: 16px;
+  background-color: lightgray;
+  color: black;
+}
+
+.control-error {
+  border: 1px solid red;
+}
+
+.centered-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-message-control {
+  flex-grow: 1;
+  margin: 20px;
+  height: 140px;
+  padding: 10px;
+  background-color: lightgray;
+  color: black;
+  resize: none;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.submit-button {
+  background-color: lightgray;
+  color: dimgray;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0px 20px;
+  padding: 0px 20px;
+  border: none;
+}
+
+.footer-elt {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.trans-box {
   display: flex;
   flex-direction: column;
+  margin: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  background: rgba(0,0,0, .3);
+  padding: 10px;
+  width: 480px;
+}
+
+.side-box {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow-y: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  padding-bottom: 25px;
+  font-weight: bold;
+  color: lightgray;
+}
+
+.bm-item:focus {
+  outline: none;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
