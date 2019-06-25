@@ -114,6 +114,7 @@ a:hover, a:focus {
   align-items: center;
   justify-content: center;
   margin: 20px;
+  padding: 20px;
 }
 
 /* Position and sizing of burger button */
