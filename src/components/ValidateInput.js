@@ -1,4 +1,4 @@
-const ValidateInput = (value, rules) => {
+const validateInput = (value, rules) => {
   let isValid = true;
 
   for (let rule in rules) {
@@ -48,4 +48,4 @@ const emailValidator = value => {
   return re.test(String(value).toLowerCase());
 }
 
-export default ValidateInput;
+export default validateInput

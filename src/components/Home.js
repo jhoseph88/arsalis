@@ -1,17 +1,8 @@
 import React from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
 
 import Box from './Box'
 import Divider from './Divider'
-
-const buttonStyle = {
-  backgroundColor: 'gray',
-  color: 'lightgray',
-  width: '30%',
-  margin: '20px',
-  textAlign: 'center',
-  fontWeight: 'bold'
-}
+import InfoTab from './InfoTab'
 
 export default function Home(props) {
   return (
@@ -20,7 +11,6 @@ export default function Home(props) {
         <span id="human">Humans</span> helping <span id="human">humans</span>. <span id="it">IT</span> is just what we do...
       </p>
       <Divider text="Our Services"/>
-      { /* TODO - links should link to areas of service page which detail individual service */ }
       <div className="boxes">
         <Box title="Full Stack"
           id="box-full-stack"
@@ -34,23 +24,17 @@ export default function Home(props) {
           page="services"
           body="Elasticity, scalability, affordability ... We've got you covered."
           anchor="#cloud-title"/>
-      <Box title="Data Solutions"
+        <Box title="Data Solutions"
           id="box-data-solutions"
           icon="fas fa-database"
           page="services"
           body="ETL, pipelines, warehousing, and much more..."
           anchor="#data-title"/>
       </div>
-      <p className="slogan">
-        Ready to find out more?
-      </p>
+      <p className="slogan">Ready to find out more?</p>
       <div className="centered-rows">
-        <Link id="our-background" to="/about#background-title" style={ buttonStyle }>
-          <p>Our Background</p>
-        </Link>
-        <Link id ="our-offer" to="/about#mission-title" style={ buttonStyle }>
-          <p>What We Offer</p>
-        </Link>
+        <InfoTab id='our-background' path={'/about#background-title'} title={'Our Background'}/>
+        <InfoTab id ="our-offer" path={'/about#mission-title'} title={'Our Offer'}/>
       </div>
     </div>
   )

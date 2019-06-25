@@ -4,17 +4,15 @@ export const contactFormDefaults = {
   formControls: {
     name: {
       value: '',
-      placeholder: 'Name',
       valid: false,
       validationRules: {
-        minLength: 3,
+        minLength: 2,
         isRequired: true
       },
       touched: false
     },
     email: {
       value: '',
-      placeholder: 'Email',
       valid: false,
       validationRules: {
         isRequired: true,
@@ -24,7 +22,6 @@ export const contactFormDefaults = {
     },
     message: {
       value: '',
-      placeholder: 'Message',
       valid: false,
       validationRules: {
         minLength: 3,

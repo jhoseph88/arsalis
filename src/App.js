@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { stack as Menu } from 'react-burger-menu'
 import ScrollUpButton from 'react-scroll-up-button'
 
-import logo from './logo.png'
+import logo from './logo_new.png'
 import './App.css'
 import Home from './components/Home'
 import About from './components/About'
@@ -60,7 +60,7 @@ export default class App extends Component {
           </Link>
         </Menu>
         <Link to="/" className="logo-home">
-          <img src={logo} alt="logo" width="200px" height="56px"/>
+          <img src={logo} alt="logo" width="200px"/>
         </Link>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
@@ -76,7 +76,10 @@ export default class App extends Component {
           </div>
         </div>
         <div>
-          <ScrollUpButton ShowAtPosition={25} EasingType='linear' style={{height: '30px', width: '30px'}}/>
+          <ScrollUpButton
+            ShowAtPosition={25}
+            EasingType='linear'
+            style={{height: '30px', width: '30px'}}/>
         </div>
       </div>
     )

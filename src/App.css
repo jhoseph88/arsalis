@@ -1,24 +1,6 @@
-.App {
-  position: relative;
-}
-
-.App:after {
-  content : "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity : 0.2;
-  z-index: -1;
-  background-image: url(background_flipped.png);
-  opacity: .3;
-}
-
 .logo-home {
   display: flex;
-  padding: 20px;
+  padding: 40px;
   width: 200px;
   margin-right: auto;
 }
@@ -42,7 +24,6 @@ a:hover, a:focus {
 
 .slogan {
   font-size: 36px;
-  margin: 20px;
   text-align: center;
 }
 
@@ -82,18 +63,7 @@ a:hover, a:focus {
 }
 
 .contact-background {
-  background-color: dimgray;
-  color: lightgray;
-}
-
-.form-control {
-  border: none;
-  flex-grow: 1;
-  padding: 10px;
-  margin: 20px 20px 0px 20px;
-  font-size: 16px;
   background-color: lightgray;
-  color: black;
 }
 
 .control-error {
@@ -109,8 +79,8 @@ a:hover, a:focus {
 
 .input-message-control {
   flex-grow: 1;
-  margin: 20px;
-  height: 140px;
+  margin: 0px 20px;
+  height: 100%;
   padding: 10px;
   background-color: lightgray;
   color: black;
@@ -119,16 +89,6 @@ a:hover, a:focus {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-}
-
-.submit-button {
-  background-color: lightgray;
-  color: dimgray;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0px 20px;
-  padding: 0px 20px;
-  border: none;
 }
 
 .footer-elt {
@@ -170,9 +130,6 @@ a:hover, a:focus {
   background: #373a47;
 }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {}
-
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
@@ -212,4 +169,11 @@ a:hover, a:focus {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
