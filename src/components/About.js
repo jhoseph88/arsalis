@@ -15,11 +15,11 @@ export default class About extends Component {
       <div>
         <h1 className="centered-rows">Why choose Arsalis?</h1>
         <Divider id="mission-title" text="Our Mission"/>
-        <IconInfo icon='fa-handshake' color='#2E83EB' content={about.mission}/>
+        <IconInfo icon='fa-handshake' content={about.mission}/>
         <Divider id="values-title" text="Our Values"/>
-        <IconInfo icon='fa-hand-holding-heart' color='#EB4D2D' content={about.values} after/>
+        <IconInfo icon='fa-hand-holding-heart' content={about.values} after/>
         <Divider id="background-title" text="Our Background"/>
-        <IconInfo icon='fa-people-carry' color='#74F19E' content={about.background}/>
+        <IconInfo icon='fa-people-carry' content={about.background}/>
       </div>
     )
   }

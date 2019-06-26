@@ -7,13 +7,14 @@ const buttonStyle = {
   width: '30%',
   margin: '20px',
   textAlign: 'center',
-  fontWeight: 'bold'
+  fontWeight: 'bold',
+  padding: '0px'
 }
 
 export default function InfoTab(props) {
   return (
     <Button variant="contained" style={ buttonStyle }>
-      <Link to={props.path}>
+      <Link to={props.path} style={{ width: '100%' }}>
         <p style={{ color: 'white' }}>{props.title}</p>
       </Link>
     </Button>
